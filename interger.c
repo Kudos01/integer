@@ -41,7 +41,7 @@ int main() {
   }
   //Notify the user that the inputed number belonged to the array
   if (found){
-    printf("Shit we found your numero");
+    printf("We found your number");
   }
   
   return 0;
