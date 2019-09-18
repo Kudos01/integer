@@ -21,14 +21,29 @@ int main() {
   //Variable declaration
   int a[20];
   int i = 0;
-  
-  //For loop to read through all the characters of the array.
+  int input;
+  int found = 0;
+
+  //For loop to fill an array.
   for(i=0; i<20; i++){
-    
+    a[i] = i*i;
+  }
+
+ //Ask the user for the input and save it in a variable
+  printf("Tell me your deepest secret or a random integer:");
+  scanf("%d", &input):
+  
+  //Check if the input coincides with the array
+  for(i=0; i<20 && !found; i++){
+    if (input == a[i]){
+      found = 1;
+    }
+  }
+  //Notify the user that the inputed number belonged to the array
+  if (found){
+    printf("Shit we found your numero");
   }
   
-  
-
   return 0;
 }
 //End of code;
